@@ -5,7 +5,7 @@ import {
   type LanguageServiceEnvironment,
   createTypeScriptWorkerLanguageService,
 } from '@volar/monaco/worker'
-import { createNpmFileSystem } from '@volar/jsdelivr'
+import { createNpmFileSystem } from './resource'
 import {
   type VueCompilerOptions,
   getFullLanguageServicePlugins,
