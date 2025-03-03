@@ -5,7 +5,6 @@ import {
   type LanguageServiceEnvironment,
   createTypeScriptWorkerLanguageService,
 } from '@volar/monaco/worker'
-import { createNpmFileSystem } from './resource'
 import {
   type VueCompilerOptions,
   getFullLanguageServicePlugins,
@@ -14,6 +13,7 @@ import {
 } from '@vue/language-service'
 import type { WorkerHost, WorkerMessage } from './env'
 import { URI } from 'vscode-uri'
+import { createNpmFileSystem } from './resource'
 
 export interface CreateData {
   tsconfig: {
